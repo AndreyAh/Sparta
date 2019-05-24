@@ -1,22 +1,84 @@
 @font-face {
-  font-family: "Oswald";
-  src: local("Oswald Medium"),
-    local("Oswald-Medium"),
-    url("../fonts/Oswald-Medium.woff2") format("woff2"),
-    url("../fonts/Oswald-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
+    font-family: 'Besom';
+    src: local('The Besom'), local('Besom'),
+        url('../fonts/Besom.woff2') format('woff2'),
+        url('../fonts/Besom.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Oswald";
-  src: local("Oswald Regular"),
-    local("Oswald-Regular"),
-    url("../fonts/Oswald-Regular.woff2") format("woff2"),
-    url("../fonts/Oswald-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Besom';
+    src: local('The Besom by Krisjanis Mezulis / RIT CREATIVE'), local('Besom'),
+        url('Besom.woff2') format('woff2'),
+        url('Besom.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Core Sans E 55';
+    src: local('Core Sans E 55 Medium'), local('CoreSansE-55Medium'),
+        url('../fonts/CoreSansE-55Medium.woff2') format('woff2'),
+        url('../fonts/CoreSansE-55Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans E 45';
+    src: local('Core Sans E 45 Regular'), local('CoreSansE-45Regular'),
+        url('../fonts/CoreSansE-45Regular.woff2') format('woff2'),
+        url('../fonts/CoreSansE-45Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans E 35';
+    src: local('Core Sans E 35 Light'), local('CoreSansE-35Light'),
+        url('../fonts/CoreSansE-35Light.woff2') format('woff2'),
+        url('../fonts/CoreSansE-35Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans E 35';
+    src: local('Core Sans E 35 Light Italic'), local('CoreSansE-35LightIt'),
+        url('../fonts/CoreSansE-35LightIt.woff2') format('woff2'),
+        url('../fonts/CoreSansE-35LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans E 85';
+    src: local('Core Sans E 85 Heavy'), local('CoreSansE-85Heavy'),
+        url('../fonts/CoreSansE-85Heavy.woff2') format('woff2'),
+        url('../fonts/CoreSansE-85Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans E 95';
+    src: local('Core Sans E 95 Black'), local('CoreSansE-95Black'),
+        url('../fonts/CoreSansE-95Black.woff2') format('woff2'),
+        url('../fonts/CoreSansE-95Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans E 65';
+    src: local('Core Sans E 65 Bold'), local('CoreSansE-65Bold'),
+        url('../fonts/CoreSansE-65Bold.woff2') format('woff2'),
+        url('../fonts/CoreSansE-65Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
 
 html {
   box-sizing: border-box;
@@ -53,39 +115,99 @@ input[type="radio"].visualy-hidden {
   overflow: hidden;
 }
 
+// .btn {
+//   background-color: $decor-color;
+//   border: none;
+//   cursor: pointer;
+//   text-transform: uppercase;
+// }
+
 .btn {
-  background-color: $decor-color;
+  display: inline-block;
   border: none;
-  cursor: pointer;
+  // color: $second-base-color;
+  text-decoration: none;
+  // background-color: $accent;
+  margin-top: -25px;
+  // padding: 16px 45px;
+  padding: 12px 22px;
+  font-size: 13px;
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  border-radius: 2px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: background-color 0.1s ease;
+
+  &::after {
+    transition: background-color 0.2s ease;
+    position: absolute;
+    content: "";
+    height: 4px;
+    bottom: 0;
+    width: 100%;
+    // background-color: darken($accent, 50%);
+    opacity: 0.18;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    left: 0;
+  }
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    // color: $second-base-color;
+  }
+
+  &:hover {
+    // background-color: lighten($accent, 5%);
+
+    &::after {
+      opacity: 0.22;
+    }
+  }
+
+  &:active {
+    // background-color: darken($accent, 5%);
+
+    &::after {
+      opacity: 0.32;
+    }
+  }
 }
 
-.form__container,
-.page-footer__wrapper {
-  max-width: 1300px;
-  padding: 0 40px;
-  margin: 0 auto;
-}
+// .form__container,
+// .page-footer__wrapper {
+//   max-width: 1300px;
+//   padding: 0 40px;
+//   margin: 0 auto;
+// }
 
 body {
   padding: 0;
   margin: 0 auto;
   min-width: 320px;
-  font-family: "Arial", "Times New Roman", sans-serif;
+  font-family: "Core Sans E -45 Regular", "Times New Roman", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $base-color;
 }
 
+.container {
+  padding: 10px 15px 0;
+}
+
 @media (min-width: $tablet-width) {
   body {
-    min-width: 768px;
+    min-width: 750px;
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
-    max-width: 1440px;
+    max-width: 1170px;
   }
 }

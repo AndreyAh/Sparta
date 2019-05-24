@@ -1,8 +1,8 @@
 /*Цвета*/
-$base-color: #444444;
+$base-color: #4d4d4d;
 $second-base-color: #ffffff;
-$background-color: #f2f2f2;
-$decor-color: #68b738;
+// $background-color: #f2f2f2;
+$decor-color: #ff0000;
 $title-color: #111111;
 
 @mixin list-default {
@@ -12,8 +12,8 @@ $title-color: #111111;
 }
 
 /*Размеры брейкпоинтов*/
-$tablet-width: 768px;
-$desktop-width: 1300px;
+$tablet-width: 750px;
+$desktop-width: 1170px;
 
 /*Разрешения*/
 $retina-dpi: 144dpi;
