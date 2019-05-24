@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Medium"),
+    local("Oswald-Medium"),
+    url("../fonts/Oswald-Medium.woff2") format("woff2"),
+    url("../fonts/Oswald-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Regular"),
+    local("Oswald-Regular"),
+    url("../fonts/Oswald-Regular.woff2") format("woff2"),
+    url("../fonts/Oswald-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visualy-hidden:not(:focus):not(:active),
+input[type="checkbox"].visualy-hidden,
+input[type="radio"].visualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  background-color: $decor-color;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.form__container,
+.page-footer__wrapper {
+  max-width: 1300px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  font-family: "Arial", "Times New Roman", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $base-color;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    max-width: 1440px;
+  }
+}
