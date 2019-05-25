@@ -1,0 +1,18 @@
+.whatgive {
+  background-image: url("../img/bg_course_mobile.jpg"),
+    url("../img/border_course_mobile.png"),
+    url("../img/bg_red_course_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 130px 0 150px;
+  /*Временно для наглядности*/
+  min-height: 1300px;
+}
+
+.whatgive__title {
+  color: $second-base-color;
+  text-align: left;
+  width: 220px;
+  margin: 0 auto;
+}
+

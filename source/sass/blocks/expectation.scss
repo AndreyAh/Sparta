@@ -1,0 +1,66 @@
+.expectation {
+  text-align: center;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+.expectation__start {
+  color: $decor-color;
+  font-family: "Core Sans E -35 Light", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.expectation__marker {
+  margin-bottom: 20px;
+}
+
+.expectation__list {
+  @include list-default;
+}
+
+.expectation__item {
+  margin-bottom: 40px;
+}
+
+.expectation__title {
+  position: relative;
+  color: $decor-color;
+  letter-spacing: -1px;
+  margin: 30px 0 50px;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: "что вас ждет";
+    position: absolute;
+    color: #32383f;
+    opacity: 0.1;
+    top: -60%;
+    width: 550px;
+    font-family: 'Besom', "Times New Roman", sans-serif;
+    line-height: 100px;
+    font-size: 100px;
+    letter-spacing: 4px;
+  }
+}
+
+.expectation__item-img {
+  margin: 0 auto 20px;
+}
+
+.expectation__item-title {
+  margin: 0;
+  font-family: "Core Sans E -65 Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.expectation__item-desc {
+  margin: 0;
+  line-height: 24px;
+}
