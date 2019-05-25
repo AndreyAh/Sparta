@@ -1,0 +1,23 @@
+.youwillknow {
+  overflow: hidden;
+}
+
+.youwillknow__title {
+  position: relative;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "ты узнаешь";
+    position: absolute;
+    color: #32383f;
+    opacity: 0.1;
+    width: 460px;
+    font-family: 'Besom', "Times New Roman", sans-serif;
+    line-height: 100px;
+    font-size: 100px;
+    letter-spacing: 4px;
+  }
+}
