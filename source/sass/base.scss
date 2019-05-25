@@ -115,15 +115,13 @@ input[type="radio"].visualy-hidden {
 .btn {
   display: block;
   width: 310px;
-  // margin-left: -10px;
-  // margin-bottom: 45px;
   margin: 0 auto;
   border: none;
   color: $second-base-color;
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 20px 22px 30px;
+  padding: 20px 22px 32px;
   font-size: 18px;
   font-family: "Core Sans E -95 Black", sans-serif;
   text-transform: uppercase;
@@ -138,27 +136,33 @@ input[type="radio"].visualy-hidden {
   outline: none;
   transition: background-color 0.1s ease;
 
-  &:focus,
-  &:hover {
-    text-decoration: none;
-    // color: $second-base-color;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-
-    &::after {
-      opacity: 0.22;
-    }
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
   }
 
   &:active {
-    // background-color: darken($accent, 5%);
-
-    &::after {
-      opacity: 0.32;
-    }
+    padding-top: 22px;
+    padding-bottom: 30px;
   }
+}
+
+.title {
+  font-family: "Core Sans E -95 Black", sans-serif;
+  font-size: 34px;
+  line-height: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.marker {
+  margin: 0 auto;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/marker.png");
+  background-repeat: no-repeat;
 }
 
 // .form__container,
@@ -173,7 +177,7 @@ body {
   margin: 0 auto;
   min-width: 320px;
   font-family: "Core Sans E -45 Regular", "Times New Roman", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: $base-color;
@@ -182,7 +186,6 @@ body {
 .container {
   padding: 10px 15px 45px;
   margin: 0 auto;
-  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
