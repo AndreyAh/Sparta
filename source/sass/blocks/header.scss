@@ -8,4 +8,97 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 55px;
+}
+
+.main-header__phone {
+  color: #ffffff;
+  font-family: "Core Sans E -55 Medium", "Times New Roman", sans-serif;;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.main-header__type {
+  display: block;
+  background-image: url("../img/course_bg.png");
+  background-position: -100px 5px;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: "Core Sans E -45 Regular", "Times New Roman", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 11.2px;
+  margin-bottom: 20px;
+}
+
+.main-header__title-top {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+  color: #ff0000;
+  margin: 0;
+  display: block;
+  font-family: 'Besom', "Times New Roman", sans-serif;
+  font-size: 102px;
+  font-weight: 400;
+  line-height: 102px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-left: -7px; // Очень сомнительное свойство!!!
+}
+
+.main-header__title {
+  font-family: "Core Sans E -95 Black", sans-serif;
+  color: $second-base-color;
+  font-size: 34px;
+  line-height: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.main-header__wrapper-middle {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main-header__schedule {
+  @include list-default;
+  width: 205px;
+  height: 40px;
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/shedule_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+.main-header__schedule-item {
+  color: #1b1916;
+  font-family: "Core Sans E -95 Black", sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  /* Text style for "Вс" */
+  letter-spacing: 0.9px;
+  margin-right: 60px;
+}
+
+.main-header__schedule-item:last-child {
+  margin-right: 0;
+}
+
+.main-header__duration {
+  color: #ffffff;
+  display: block;
+  // font-family: "Core Sans E -35 Light It", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 10px;
 }

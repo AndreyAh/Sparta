@@ -1,25 +1,15 @@
 @font-face {
     font-family: 'Besom';
-    src: local('The Besom'), local('Besom'),
-        url('../fonts/Besom.woff2') format('woff2'),
+    src: url('../fonts/Besom.woff2') format('woff2'),
         url('../fonts/Besom.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Besom';
-    src: local('The Besom by Krisjanis Mezulis / RIT CREATIVE'), local('Besom'),
-        url('Besom.woff2') format('woff2'),
-        url('Besom.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Core Sans E 55';
-    src: local('Core Sans E 55 Medium'), local('CoreSansE-55Medium'),
-        url('../fonts/CoreSansE-55Medium.woff2') format('woff2'),
+    src: url('../fonts/CoreSansE-55Medium.woff2') format('woff2'),
         url('../fonts/CoreSansE-55Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
@@ -123,37 +113,30 @@ input[type="radio"].visualy-hidden {
 // }
 
 .btn {
-  display: inline-block;
+  display: block;
+  width: 310px;
+  // margin-left: -10px;
+  // margin-bottom: 45px;
+  margin: 0 auto;
   border: none;
-  // color: $second-base-color;
+  color: $second-base-color;
   text-decoration: none;
-  // background-color: $accent;
-  margin-top: -25px;
-  // padding: 16px 45px;
-  padding: 12px 22px;
-  font-size: 13px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 20px 22px 30px;
+  font-size: 18px;
+  font-family: "Core Sans E -95 Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 3px;
   border-radius: 2px;
   text-align: center;
   position: relative;
+  background-image: url("../img/title_bg.png");
+  background-repeat: no-repeat;
   outline: none;
   transition: background-color 0.1s ease;
-
-  &::after {
-    transition: background-color 0.2s ease;
-    position: absolute;
-    content: "";
-    height: 4px;
-    bottom: 0;
-    width: 100%;
-    // background-color: darken($accent, 50%);
-    opacity: 0.18;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    left: 0;
-  }
 
   &:focus,
   &:hover {
@@ -162,7 +145,7 @@ input[type="radio"].visualy-hidden {
   }
 
   &:hover {
-    // background-color: lighten($accent, 5%);
+    transform: scale(1.05);
 
     &::after {
       opacity: 0.22;
@@ -197,7 +180,9 @@ body {
 }
 
 .container {
-  padding: 10px 15px 0;
+  padding: 10px 15px 45px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
