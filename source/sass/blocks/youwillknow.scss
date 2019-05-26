@@ -1,5 +1,6 @@
 .youwillknow {
   overflow: hidden;
+  text-align: center;
 }
 
 .youwillknow__title {
@@ -8,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 55px;
 
   &::before {
     content: "ты узнаешь";
@@ -21,3 +23,32 @@
     letter-spacing: 4px;
   }
 }
+
+.youwilknow__list {
+  @include list-default;
+}
+
+.youwilknow__item {
+  margin-bottom: 40px;
+}
+
+.youwilknow__item-img {
+  margin: 0 auto 30px;
+}
+
+.youwilknow__item-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Core Sans E -65 Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.youwilknow__item-desc {
+  margin: 0;
+  line-height: 24px;
+}
+
+
