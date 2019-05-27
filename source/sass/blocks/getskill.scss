@@ -1,0 +1,80 @@
+.getskill {
+  padding-top: 25px;
+  overflow: hidden;
+  background-image: url("../img/dotted_line.png"),
+    url("../img/bg_text_mobile.png");
+  background-repeat: no-repeat;
+  background-position: -70px 120px, -10px 230px;
+
+  /*Временно для наглядности*/
+  min-height: 920px;
+}
+
+.getskill__title {
+  position: relative;
+  letter-spacing: -1px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+  min-height: 120px;
+
+  &::before {
+    content: "ты приобретёшь";
+    position: absolute;
+    color: #32383f;
+    opacity: 0.1;
+    width: 640px;
+    height: 80px;
+    font-family: 'Besom', "Times New Roman", sans-serif;
+    line-height: 100px;
+    font-size: 100px;
+    letter-spacing: 4px;
+  }
+}
+
+.getskill__list {
+  @include list-default;
+}
+
+.getskill__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+.getskill__item .marker {
+  flex: none;
+  margin-right: 20px;
+}
+
+.getskill__item-text {
+  margin: 0;
+  line-height: 24px;
+}
+
+.getskill__item:first-child {
+  margin-left: 30px;
+  width: 190px;
+}
+
+.getskill__item:nth-child(2) {
+  margin-left: 67px;
+  width: 200px;
+}
+
+.getskill__item:nth-child(3) {
+  margin-left: 73px;
+  width: 250px;
+}
+
+.getskill__item:nth-child(4) {
+  margin-left: 53px;
+  width: 220px;
+}
+
+.getskill__item:nth-child(5) {
+  margin-left: -10px;
+  width: 255px;
+}

@@ -1,0 +1,42 @@
+.intown__title {
+  letter-spacing: -4px;
+  margin-bottom: 45px;
+}
+
+.intown__list {
+  background-image: url("../img/save_town_mobile.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 10px;
+}
+
+.intown__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
+}
+
+.intown__item-num {
+  color: $second-base-color;
+  font-family: "Core Sans E -85 Heavy", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  margin-right: 50px;
+  display: block;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.intown__item-text {
+  margin: 0;
+}

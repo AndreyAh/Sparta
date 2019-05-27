@@ -1,0 +1,24 @@
+.test {
+  background-image: url("../img/risk_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.test__title-top {
+  text-shadow: 0 4px 8px rgba(0,0,0,.34);
+  color: red;
+  display: block;
+  font-family: 'Besom',"Times New Roman",sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 102px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.test__title {
+  color: $second-base-color;
+  margin: 140px 0 50px;
+  font-size: 25px;
+  letter-spacing: -2px;
+}
