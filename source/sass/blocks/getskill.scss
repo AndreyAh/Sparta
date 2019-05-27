@@ -5,15 +5,11 @@
     url("../img/bg_text_mobile.png");
   background-repeat: no-repeat;
   background-position: -70px 120px, -10px 230px;
-
-  /*Временно для наглядности*/
-  min-height: 920px;
 }
 
 .getskill__title {
   position: relative;
   letter-spacing: -1px;
-  min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +23,7 @@
     opacity: 0.1;
     width: 640px;
     height: 80px;
-    font-family: 'Besom', "Times New Roman", sans-serif;
+    font-family: "Besom", "Times New Roman", sans-serif;
     line-height: 100px;
     font-size: 100px;
     letter-spacing: 4px;

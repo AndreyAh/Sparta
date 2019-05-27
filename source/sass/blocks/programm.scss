@@ -1,0 +1,78 @@
+.programm {
+  background-image: url("../img/bg_programm_mobile.png"),
+    url("../img/instructors_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top center, bottom center;
+  overflow: hidden;
+  text-align: center;
+  /*Временно*/
+  min-height: 940px;
+}
+
+.programm__title {
+  position: relative;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  min-height: 120px;
+  z-index: 1;
+
+  &::after {
+    content: "программа";
+    position: absolute;
+    color: #ffffff;
+    z-index: -1;
+    width: 640px;
+    height: 80px;
+    font-family: "Besom", "Times New Roman", sans-serif;
+    line-height: 100px;
+    font-size: 100px;
+    letter-spacing: 4px;
+  }
+}
+
+.programm__list {
+  @include list-default;
+  margin: 0 auto;
+  text-align: left;
+  width: 275px;
+}
+
+.programm__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.programm__item-num {
+  color: $decor-color;
+  font-family: "Besom", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 2.21px;
+  padding-right: 13px;
+  padding-top: 3px;
+}
+
+.subscribe {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+  color: red;
+  display: block;
+  font-family: "Besom", "Times New Roman", sans-serif;
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 102px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-programm {
+  margin-bottom: 265px;
+}
+
+// .programm__img {
+//   position: relative;
+// }
