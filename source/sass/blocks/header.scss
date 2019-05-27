@@ -13,7 +13,7 @@
 
 .main-header__phone {
   color: #ffffff;
-  font-family: "Core Sans E -55 Medium, Times New Roman", sans-serif;
+  font-family: "Core Sans E -55 Medium", "Times New Roman", sans-serif;
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
@@ -39,10 +39,10 @@
 
 .main-header__title-top {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
-  color: #ff0000;
+  color: $decor-color;
   margin: 0;
   display: block;
-  font-family: "Besom, Times New Roman", sans-serif;
+  font-family: "Besom", "Times New Roman", sans-serif;
   font-size: 102px;
   font-weight: 400;
   line-height: 80px;

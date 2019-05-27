@@ -9,7 +9,9 @@
 
 @font-face {
   font-family: "Core Sans E 55";
-  src: url("../fonts/CoreSansE-55Medium.woff2") format("woff2"),
+  src:local("Core Sans E 55"),
+    local("CoreSansE-55Regular"),
+    url("../fonts/CoreSansE-55Medium.woff2") format("woff2"),
     url("../fonts/CoreSansE-55Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
