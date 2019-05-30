@@ -1,10 +1,9 @@
 .whatgive {
-  background-image:
-    url("../img/bg_red_course_mobile.jpg"),
-    url("../img/border_course_mobile.png"),
+  background-image: url("../img/border_course_mobile.png"),
+    url("../img/bg_red_course_mobile.png"),
     url("../img/bg_course_mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center 130px, center 130px, center center;
+  background-position: center 130px, center 135px, center center;
   padding: 0 0 60px;
   /*Временно для наглядности*/
   min-height: 1300px;
@@ -13,14 +12,13 @@
 .whatgive__wrapper {
   width: 290px;
   margin: 0 auto;
-  padding-top: 50px;
 }
 
 .whatgive__title {
   color: $second-base-color;
   text-align: left;
   width: 220px;
-  margin: 70px auto 100px;
+  margin: 200px auto 100px;
 }
 
 .whatgive__list {
