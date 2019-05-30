@@ -1,0 +1,38 @@
+.instructor {
+  padding: 25px 0;
+  overflow: hidden;
+}
+
+// .instructor .container {
+//   text-align: center;
+// }
+
+.instructor__img-title {
+  text-align: center;;
+}
+
+.instructor__title {
+  position: relative;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+
+  &::before {
+    content: "Инструктор";
+    position: absolute;
+    color: #32383f;
+    opacity: 0.1;
+    width: 460px;
+    height: 80px;
+    font-family: "Besom", "Times New Roman", sans-serif;
+    line-height: 100px;
+    font-size: 100px;
+    letter-spacing: 4px;
+  }
+}
+
+.instructor__img {
+  margin: 0 auto;
+}
