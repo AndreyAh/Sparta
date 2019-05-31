@@ -36,3 +36,28 @@
 .instructor__img {
   margin: 0 auto;
 }
+
+.instructor__skills-list-top,
+.instructor__skills-list-bottom {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 10px 0 60px;
+  background-repeat: no-repeat;
+  background-position: left 5px;
+}
+
+.instructor__skills-list-top {
+  background-image: url("../img/bg_instructors.png");
+  margin-bottom: 20px;
+  min-height: 280px;
+}
+
+.instructor__skills-list-bottom {
+  background-image: url("../img/bg_instructors_bottom.png");
+  min-height: 230px;
+}
+
+.instructor__item {
+  margin-bottom: 25px;
+
+}
