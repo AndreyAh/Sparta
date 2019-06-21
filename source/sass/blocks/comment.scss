@@ -1,0 +1,29 @@
+.comment {
+  margin-top: 30px;
+  background-color: #fcfcfc;
+}
+
+.comment .container {
+  padding-bottom: 0;
+}
+
+.comment__title {
+  position: relative;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+
+  &::before {
+    content: "Отзывы";
+    position: absolute;
+    color: #32383f;
+    opacity: 0.1;
+    height: 80px;
+    font-family: "Besom", "Times New Roman", sans-serif;
+    line-height: 100px;
+    font-size: 100px;
+    letter-spacing: 4px;
+  }
+}
